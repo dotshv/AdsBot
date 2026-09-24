@@ -5,7 +5,7 @@ class Config:
     def __init__(self):
         self.API_ID = int(getenv("API_ID", "35404283"))
         self.API_HASH = getenv("API_HASH", "3684648897cea8aa6505a046541ab6f7")
-        self.BOT_TOKEN = getenv("BOT_TOKEN", "8929419983:AAFXDEgXjWBncprmTf0jhR8X1gmL5a2cCDg")
+        self.BOT_TOKEN = getenv("BOT_TOKEN", "")
         self.MONGO_URL = getenv("MONGO_URL", "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority")
         self.ADMIN_ID = int(getenv("ADMIN_ID", "7953559026"))
         self.LOG_GROUP = int(getenv("LOG_GROUP", "-1003824746394"))
