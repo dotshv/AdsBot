@@ -1,0 +1,16 @@
+[Unit]
+Description=AdsBot Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/spam
+ExecStart=/usr/bin/python3 -m bot
+Restart=always
+RestartSec=5
+StandardOutput=append:/root/spam/adsbot.log
+StandardError=append:/root/spam/adsbot.log
+
+[Install]
+WantedBy=multi-user.target
