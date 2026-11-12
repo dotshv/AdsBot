@@ -5,12 +5,12 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/spam
+WorkingDirectory=/home/toxic/AdsBot
 ExecStart=/usr/bin/python3 -m bot
 Restart=always
 RestartSec=5
-StandardOutput=append:/root/spam/adsbot.log
-StandardError=append:/root/spam/adsbot.log
+StandardOutput=append:/home/toxic/AdsBot/adsbot.log
+StandardError=append:/home/toxic/AdsBot/adsbot.log
 
 [Install]
 WantedBy=multi-user.target
